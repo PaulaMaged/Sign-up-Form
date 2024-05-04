@@ -21,8 +21,8 @@ body {
 }
 
 .right-section {
-    background-color: lightgrey;
-    flex: 2;
+    background-color: whitesmoke;
+    flex: 3;
     padding: 0 auto;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ body {
 }
 
 .image {
-  flex: 1;
+  flex: 2;
   background-image: url(data/images/starBG_klemen-vrankar_unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -41,7 +41,7 @@ body {
 .image-text {
   position: absolute;
   top: 3rem;
-  background-color: rgb(0, 0, 0);
+  background-color: #ffffff13;
   height: 25%;
   width: 100%;
   display: flex;
@@ -50,7 +50,8 @@ body {
 
 .logo {
   background-image: url(data/images/odin-lined.png);
-  width: 8rem;
+  width: 25%;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -58,6 +59,8 @@ body {
 .brand-name {
   font-family: "Jaro", "sans-serif";
   color: whitesmoke;
+  margin: auto 1rem;
+  font-size: 4rem;
 }
 
 .credit {
@@ -66,6 +69,9 @@ body {
   font-weight: 700px;
   font-family: "Jaro";
   bottom: 0;
+  font-size: 0.75rem;
+  width: 100%;
+  text-align: center;
 }
 
 .header {
@@ -73,7 +79,8 @@ body {
 
 form {
   background-color: white;
-  box-shadow: 0px 1px 2px black;
+  box-shadow: 0px 5px 25px black;
+  border-radius: 15px;
 }
 
 
@@ -102,15 +109,32 @@ input {
 
 .bottom > button {
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem 0;
   background-color: var(--pressable-color);
   border: 0;
-  box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .existing-user > button  {
-  background-color: lightgrey;
+  background-color: inherit;
   border: 0px;
   font-weight: 500;
   color: var(--pressable-color);
+}
+
+button:hover {
+  /* box-shadow: 0px 0px 1px black; */
+  text-shadow: 0px 0px 1px black;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:focus {
+  border: 2px solid rgb(0, 195, 255);
 }
